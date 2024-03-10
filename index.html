@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zay Shop eCommerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/normalize-file/normalize.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- When Page Loaded this will removing ( div.class = loading ) -->
+    <!-- preloader section -->
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-wordpress">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </div>
+
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="linkedin319@gmail.com">linkedin319@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+249 903366770">+249
+                        903366770</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://facebook.com" target="_blank" rel="sponsored"><i
+                            class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i
+                            class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Zay
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <form action="#" class="input-group">
+                            <input type="search" name="q" class="form-control" id="inputMobileSearch"
+                                placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#search">
+                        <i class="fa fa-fw fa-search text-dark me-3"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Start Banner Hero -->
+    <div id="zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 carousel-title text-success"><b>Zay</b> eCommerce</h1>
+                                <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis tempore
+                                    doloremque ipsa impedit dolor sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1 carousel-title text-success">Proident occaecat</h1>
+                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam assumenda
+                                    doloribus nam eligendi, te, voluptatibus iste pariatur a magnam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="text-success carousel-title h1">Repr in voluptate</h1>
+                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et possimus nisi
+                                    reiciendis eligendi providentere laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3 home-carousel-btn" href="#zay-hero-carousel"
+            role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3 home-carousel-btn" href="#zay-hero-carousel"
+            role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start categories section  -->
+    <section class="categories pt-3 pb-3 my-4">
+        <div class="container">
+            <div class="row py-3 text-center">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1 text-transform-capitalize">our categories</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-5 pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <div class="image">
+                        <a href="shop.html">
+                            <img src="assets/img/category_img_01.jpg" class="img-fluid rounded-pill" alt="">
+                        </a>
+                    </div>
+                    <div class="content mb-2 mt-4">
+                        <h2 class="lead mb-3">watches</h2>
+                        <a class="text-capitalize btn btn-success" href="shop.html">go shop</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <div class="image">
+                        <a href="#">
+                            <img src="assets/img/category_img_02.jpg" class="img-fluid rounded-pill" alt="">
+                        </a>
+                    </div>
+                    <div class="content mb-2 mt-4">
+                        <h2 class="lead mb-3">watches</h2>
+                        <a class="text-capitalize btn btn-success" href="shop.html">go shop</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <div class="image">
+                        <a href="shop.html">
+                            <img src="assets/img/category_img_03.jpg" class="img-fluid rounded-pill" alt="">
+
+                        </a>
+                    </div>
+                    <div class="content mb-2 mt-4">
+                        <h2 class="lead mb-3">watches</h2>
+                        <a class="text-capitalize btn btn-success" href="shop.html">go shop</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end categories section  -->
+
+    <!-- Start Featured section  -->
+    <section class="featured pt-3 pb-5 bg-light">
+        <div class="container">
+            <div class="row py-3 text-center">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1 text-transform-capitalize">Featured Product</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides
+                                Shoes</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6  col-12">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo
+                                ullamcorper.
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides
+                                Shoes</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
+                                scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Featured section  -->
+
+    <!-- start footer  -->
+    <footer class="footer bg-dark pt-4">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-sm-4">
+                        <h1 class="mb-4 text-capitalize text-success">zay shop</h1>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="text-decoration-none text-light" href="#"><i
+                                        class="fas fa-map-marker-alt fa-fw"></i> 123 Consectetur at ligula 10660</a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-light" href="tel: +249 903366770"><i
+                                        class="fa fa-phone fa-fw"></i> +249 903366770</a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-light"
+                                    href="mailto: linkden319@gmail.com"><i class="fa fa-envelope fa-fw"></i>
+                                    linkedin319@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-sm-4">
+                        <h1 class="pb-3 text-capitalize text-light">products</h1>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Luxury
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Sport
+                                    Wear
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Shoes
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Women's Shoes
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Popular Dress
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Gym Accessories
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Sport Shoes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-sm-4">
+                        <h1 class="text-light">Further Info</h1>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">home
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">about us
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">shop locations
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">FAQs
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">contact
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-footer pt-5 d-flex align-items-center border-top border-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="social-media d-flex align-items-center">
+                            <a class="text-light text-center border rounded-circle me-3 border-secondary" href="#"><i
+                                    class="fab fa-facebook-f fs-5"></i></a>
+                            <a class="text-light text-center border rounded-circle me-3 border-secondary" href="#"><i
+                                    class="fab fa-linkedin fs-5"></i></a>
+                            <a class="text-light text-center border rounded-circle me-3 border-secondary" href="#"><i
+                                    class="fab fa-instagram fs-5"></i></a>
+                            <a class="text-light text-center border rounded-circle border-secondary" href="#"><i
+                                    class="fab fa-twitter fs-5"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <form class="input-group mb-2" action="#">
+                            <input type="text" class="form-control bg-dark border-light text-light" id="subscribeEmail"
+                                placeholder="Email address">
+                            <input type="submit" class="input-group-text btn-success text-light" value="Subscribe" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer pt-4 pb-4 text-light bg-black mt-4 d-flex align-items-center">
+            <div class="container">
+                Copyright © 2021 Company Name | Designed from <a href="#" class="text-light">TemplateMo</a>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>

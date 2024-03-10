@@ -1,0 +1,176 @@
+@media (max-width: 540px) {
+    #zay-hero-carousel .home-carousel-btn i {
+        display: none;
+    }
+    #zay-hero-carousel .carousel-title {
+        font-size: 23px !important;
+    }
+}
+/* start categories design */
+.categories .image {
+    padding: 1px;
+    border: solid 1px #c4c4c4;
+    border-radius: 50%;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.categories img {
+    width: 200px;
+}
+
+/* end categories design */
+
+.services .box {
+    padding: 30px;
+    height: 200px;
+    border-radius: 0.2px #ddd solid !important;
+}
+
+.services .box:hover {
+    background-color: #59ab6e !important;
+    transition: 0.3s linear;
+    color: white !important;
+    cursor: default;
+}
+
+.services .box:hover i {
+    transition: 0.3s linear;
+    color: white !important;
+}
+
+.services .box h3,
+.services .box h3 {
+    font-size: 24px !important;
+}
+
+.services .box i {
+    font-size: 35px !important;
+}
+
+@media (max-width: 768px) {
+    .control-btn {
+        display: none !important;
+    }
+}
+
+.shop .filter a {
+    font-size: 23px !important;
+}
+
+.shop .product-overlay {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.shop .card:hover .product-overlay {
+    opacity: 1;
+}
+
+/* start footer design */
+.footer .top-footer a {
+    font-size: 15px !important;
+}
+
+@media (max-width: 470px) {
+    .footer .bottom-footer a,
+    .footer .bottom-footer .container {
+        font-size: 14px !important;
+        line-height: 2;
+    }
+    
+}
+
+.footer .center-footer .social-media a {
+    display: block;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.footer .center-footer .social-media a:hover {
+    background-color: #fff;
+    color: #000 !important;
+    transition: 0.3s linear;
+}
+
+/* end footer design */
+
+/* start single shop design */
+@media (max-width: 470px) {
+    .buy,
+    .addCart {
+        font-size: 13px !important;
+        margin-bottom: 10px;
+    }
+}
+/* end single shop design */
+
+/* preloader section */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #fff;
+    background: none repeat scroll 0 0 #f9f9f9;
+}
+
+.sk-spinner-wordpress.sk-spinner {
+    background-color: #59ab6e;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    -webkit-animation: sk-innerCircle 1s linear infinite;
+    animation: sk-innerCircle 1s linear infinite;
+}
+
+.sk-spinner-wordpress .sk-inner-circle {
+    display: block;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 8px;
+    top: 5px;
+    left: 5px;
+}
+
+@-webkit-keyframes sk-innerCircle {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-innerCircle {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

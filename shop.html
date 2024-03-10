@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zay Shop - Product Listing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/normalize-file/normalize.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- When Page Loaded this will removing ( div.class = loading ) -->
+    <!-- preloader section -->
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-wordpress">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </div>
+
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="mailto:info@company.com">info@company.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                            class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i
+                            class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Zay
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control text-light" id="inputMobileSearch"
+                                placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Start Content -->
+    <div class="shop container py-5">
+        <div class="row">
+
+            <div class="col-lg-3 col-12 mb-5">
+                <h1 class="h2 pb-4">Categories</h1>
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between text-dark h3 text-decoration-none" href="#">
+                            Gender
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="x" class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none text-dark" href="#">Men</a></li>
+                            <li><a class="text-decoration-none text-dark" href="#">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex text-dark justify-content-between h3 text-decoration-none" href="#">
+                            Sale
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none text-dark" href="#">Sport</a></li>
+                            <li><a class="text-decoration-none text-dark" href="#">Luxury</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a data-toggle="collapse" class="collapsed d-flex justify-content-between text-dark h3 text-decoration-none" href="#">
+                            Product
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none text-dark" href="#">Bag</a></li>
+                            <li><a class="text-decoration-none text-dark" href="#">Sweather</a></li>
+                            <li><a class="text-decoration-none text-dark" href="#">Sunglass</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div class="row">
+                    <div class="col-lg-5 col-12 d-flex gap-3 filter mb-2">
+                        <a href="#" class="text-capitalize text-decoration-none text-dark mr-2">all</a>
+                        <a href="#" class="text-capitalize text-decoration-none text-dark mr-2">women</a>
+                        <a href="#" class="text-capitalize text-decoration-none text-dark">men</a>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <form action="#" method="post">
+                            <select name="featured" id="featured" class="form-control">
+                                <option value="featured" class="text-transform-capitalize">featured</option>
+                                <option value="featured" class="text-transform-capitalize">a - z</option>
+                                <option value="featured" class="text-transform-capitalize">item</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_01.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_02.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_03.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_04.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_05.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_06.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_07.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_08.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_09.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_10.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 col-sm-6 col-12">
+                        <div class="card">
+                            <img src="assets/img/shop_11.jpg" class="card-img img-fluid">
+                            <div
+                                class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i
+                                                class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i
+                                                class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Oupidatat non</h5>
+                                <h5 class="card-text">M/L/X/XL</h5>
+                                <div class="card-text text-center">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </div>
+                                <div class="card-footer p-0 text-center">
+                                    <span class="price">$250,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- start footer  -->
+    <footer class="footer bg-dark pt-4">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-sm-4">
+                        <h1 class="mb-4 text-capitalize text-success">zay shop</h1>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="text-decoration-none text-light" href="#"><i
+                                        class="fas fa-map-marker-alt fa-fw"></i> 123 Consectetur at ligula 10660</a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-light" href="tel: +249 903366770"><i
+                                        class="fa fa-phone fa-fw"></i> +249 903366770</a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-light"
+                                    href="mailto: linkden319@gmail.com"><i class="fa fa-envelope fa-fw"></i>
+                                    linkedin319@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-sm-4">
+                        <h1 class="pb-3 text-capitalize text-light">products</h1>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Luxury
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Sport
+                                    Wear
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Shoes
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Women's Shoes
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Popular Dress
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Gym Accessories
+                                </a>
+                            </li>
+                            <li class="mb-2"><a class="text-decoration-none text-capitalize text-light" href="#">Men's
+                                    Sport Shoes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-sm-4">
+                        <h1 class="text-light">Further Info</h1>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">home
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">about us
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">shop locations
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">FAQs
+                                </a></li>
+                            <li><a href="#" class="text-decoration-none text-capitalize text-light">contact
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-footer pt-5 d-flex align-items-center border-top border-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-4">
+                        <div class="social-media d-flex align-items-center">
+                            <a class="text-light text-center border rounded-circle me-3 border-secondary" href="#"><i
+                                    class="fab fa-facebook-f fs-5"></i></a>
+                            <a class="text-light text-center border rounded-circle me-3 border-secondary" href="#"><i
+                                    class="fab fa-linkedin fs-5"></i></a>
+                            <a class="text-light text-center border rounded-circle me-3 border-secondary" href="#"><i
+                                    class="fab fa-instagram fs-5"></i></a>
+                            <a class="text-light text-center border rounded-circle border-secondary" href="#"><i
+                                    class="fab fa-twitter fs-5"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <form class="input-group mb-2" action="#">
+                            <input type="text" class="form-control bg-dark border-light text-light" id="subscribeEmail"
+                                placeholder="Email address">
+                            <input type="submit" class="input-group-text btn-success text-light" value="Subscribe" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer pt-4 pb-4 text-light bg-black mt-4 d-flex align-items-center">
+            <div class="container">
+                Copyright © 2021 Company Name | Designed from <a href="#" class="text-light">TemplateMo</a>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
